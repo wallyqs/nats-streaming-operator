@@ -13,3 +13,4 @@ before_script:
 script:
 - kubectl cluster-info
 - ./test/operator/deploy.sh
+- cd ./test/operator/ && go test ./... -v
